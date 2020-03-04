@@ -20,18 +20,22 @@ After git cloning, run 'npm install' and 'npm run compile:sass' in main director
 ## Folder Structure
 
 ```
-    css/
-        styles.css
-    img/
-    js/
-    sass/
-        abstracts/
-            _functions.scss
-        base/
-        components/
-        layout/
-        pages/
-        themes/
-        vendors/
-    index.html
+css/
+    styles.css
+img/
+js/
+sass/
+    abstracts/
+        _functions.scss
+    base/
+    components/
+    layout/
+    pages/
+    themes/
+    vendors/
+index.html
 ```
+
+## Example
+
+![Alt text](/img/demo.png)
