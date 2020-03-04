@@ -1,0 +1,72 @@
+/*************************
+ * HEADER
+ *************************/
+
+/* 
+ * You can set two background images if you pass two arguments into background-image property
+ * You can use clip path to set what part of an image does and doesn't show
+ */
+ .header {
+    height: 95vh;
+    width: auto;
+    background-image: linear-gradient(to bottom right, rgba($primary-color, 0.75), rgba($secondary-color, 0.75)), url('../img/main-background.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -ms-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -o-clip-path: polygon(0 0,header__logo-box--logo 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    &__logo-container {
+        position: absolute;
+        top: 3%;
+        left: 3%;
+    }
+    
+    &__logo {
+        height: 5rem;
+    }
+    
+    &__container {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    color: #fff;
+    margin-bottom: 2.5rem;
+
+    &--main {
+        display: block;
+        font-size: 4.0rem;
+        letter-spacing: 1rem;
+        animation: moveFromLeft 1s;
+        -webkit-animation: moveFromLeft 1s;
+    
+        /*
+        animation-delay: 3s; // time delay before animation actually happens
+        animation-iteration-count: 3; // how many times the animation will occur
+        animation-timing-function: ease-in; // how the animation will go ie. slow to fast or fast to slow
+        */
+    }
+    
+    &--sub {
+        display: block;
+        animation: moveFromRight 1s 0.5s;
+        -webkit-animation: moveFromRight 1s 0.5s;
+        animation-fill-mode: backwards;
+        font-size: 2rem;
+    }
+}
