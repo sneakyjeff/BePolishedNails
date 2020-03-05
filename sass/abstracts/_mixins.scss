@@ -1,0 +1,15 @@
+// MEDIA QUERY MANAGER
+
+// 0 - 600px: Phone
+// 600 - 900px: Tablet
+// 900 - 1200px: Laptops
+// 1200 - 1800px: Desktops
+// 1800px+ : Big Desktops
+
+@mixin mobileScreenSizes {
+    @media (max-width: 600px) {
+        html {
+            font-size: 0.2rem;
+        }
+    }
+}
