@@ -5,6 +5,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html html {
+      font-size: 0.2rem; } }
 
 body {
   font-family: "Lato", sans-serif;
